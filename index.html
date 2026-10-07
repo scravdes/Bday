@@ -152,7 +152,7 @@ scene.add(heartMesh);
 
 let isExploded = false;
 
-window.addEventListener('click', () => {
+renderer.domElement.addEventListener('pointerdown', () => {
     if (isExploded) {
         // Reset po ponownym kliknięciu
         isExploded = false;
